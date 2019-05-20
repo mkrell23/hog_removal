@@ -1,8 +1,29 @@
 
+* {
+  box-sizing: border-box;
+}
 
+a {
+	text-decoration: none;
+}
+
+
+
+.top-header {
+  background-color: #f6841b;
+width: 500px;
+  text-align: center;
+}
 
 .top-header h1 {
-  background-color: #0b7909;
-  display: block;
-  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+
+.navbar li {
+  font-size: 1em;
+  padding: 10px 15px;
+  color: #222222;
+  display: inline-block;
+  /* float: left; */
 }
