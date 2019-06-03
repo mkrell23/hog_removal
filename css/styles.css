@@ -1,4 +1,6 @@
-
+/* =================================
+  Base Element Styles
+==================================== */
 * {
   box-sizing: border-box;
 }
@@ -7,12 +9,50 @@ a {
 	text-decoration: none;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 300px;
+}
+
+label {
+  display: block;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+header {
+    width: 100%;
+
+}
 
 .top-header {
+  background-image: url("../img/banner_hog.jpg"), linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 25%,#ffa73d 25%,#ff7f04 58%,#d67c28 93%);
   background-color: #f6841b;
-width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  font-size: 1.6em;
+
+
+
 }
 
 .top-header h1 {
@@ -20,10 +60,17 @@ width: 500px;
   padding: 5px;
 }
 
-.navbar li {
-  font-size: 1em;
+.navbar a {
+  /* font-size: 1em; */
   padding: 10px 15px;
   color: #222222;
-  display: inline-block;
-  /* float: left; */
+  display: block;
 }
+
+.banner {
+  text-align: center;
+}
+
+/* =================================
+  Media Queries
+==================================== */
