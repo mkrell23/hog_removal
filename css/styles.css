@@ -23,6 +23,7 @@ ul {
 
 form {
   max-width: 300px;
+  margin: 10px;
 }
 
 label {
@@ -39,20 +40,21 @@ img {
 ==================================== */
 header {
     width: 100%;
+    margin-bottom: 1em;
 
 }
 
 .top-header {
-  background-image: url("../img/banner_hog.jpg"), linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 25%,#ffa73d 25%,#ff7f04 58%,#d67c28 93%);
   background-color: #f6841b;
+  background-image: linear-gradient(to bottom, rgba(255,183,107,0.4) 0%,rgba(255,167,61,0.5) 25%,rgba(255,127,4,0.6) 58%,rgba(214,124,40,0.69) 93%,rgba(214,124,40,0.82) 100%), url("../img/banner_hog.jpg");
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 1.6em;
-
-
-
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 
 .top-header h1 {
@@ -71,6 +73,49 @@ header {
   text-align: center;
 }
 
+.col {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 /* =================================
   Media Queries
 ==================================== */
+
+@media screen and (min-width: 700px) {
+  .top-header,
+  .navbar,
+  .content {
+    display: flex;
+  }
+
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+
+  .name {
+    flex: 1;
+  }
+
+  .navbar {
+    align-content: stretch;
+    width: 100%;
+  }
+
+  .navbar li {
+    flex: 1;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+}
