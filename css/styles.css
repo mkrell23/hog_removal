@@ -126,7 +126,7 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
 
 }
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
 
   .top-header{
     flex-direction: row;
