@@ -1,35 +1,21 @@
 var wildButton = document.querySelector('.wildButton');
 var text = document.querySelectorAll('p')
 var wild = false
-var tameButton = document.querySelector('.tameButton')
+var tameButton = document.querySelector('.submit')
 
 
-wildButton.addEventListener("click", wildinOut, wildinIn);
-
-
-
-function wildinOut(){
-  // if (wild = false) {
+wildButton.addEventListener("click", () => {
+  if (wild == false) {
   document.body.style.backgroundColor = '#f6841b';
   document.body.style.color= 'rgb(255, 255, 255)';
   wildButton.innerHTML = 'WILD BACK IN';
-
   wildButton.style.color = 'black';
-  wildButton.className = 'tameButton';
+  tameButton.style.color = 'black';
   wild = true;
-}
-//
-function wildinIn () {
-  // if (wild = true) {
-  document.body.style.backgroundColor = 'rgb(255, 255, 255)'
+} else {
+  document.body.style.backgroundColor = 'rgb(255, 255, 255)';
   document.body.style.color= 'black';
-  tameButton.innerHTML = 'Wild Out!';
-  tameButton.className = 'wildButton';
+  wildButton.innerHTML = 'Get Hog Wild!';
   wild = false;
 }
-// }
-//
-// h
-// g
-//
-// H
+});
