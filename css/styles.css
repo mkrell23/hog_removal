@@ -160,6 +160,8 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
   Media Queries
 ==================================== */
 
+
+/* SET NAVBAR ACROSS SCREEN, MAKE COLUMNS 2 ACROSS */
 @media screen and (min-width: 700px) {
 
   .top-header,
@@ -199,6 +201,7 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
 
 }
 
+/* SET TITLE NEXT TO NAVBAR */
 @media screen and (min-width: 1025px) {
 
   .top-header{
