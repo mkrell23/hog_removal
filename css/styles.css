@@ -199,6 +199,12 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
     flex: 1 50%;
   }
 
+  :target {
+    background-color: #f6841b;
+    color: white;
+    box-shadow: 0 0 8px rgba(47, 29, 11, 0.4);
+  }
+
 }
 
 /* SET TITLE NEXT TO NAVBAR */
