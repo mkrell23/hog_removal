@@ -24,11 +24,12 @@ ul {
 
 /* TRYING TO MAKE THE FORM NOT FUGLY */
 form {
-  max-width: 400px;
+  max-width: 16em;
   margin: 10px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 img {
@@ -87,8 +88,10 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
 }
 
 .col {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 
@@ -162,7 +165,7 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
 
 
 /* SET NAVBAR ACROSS SCREEN, MAKE COLUMNS 2 ACROSS */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 744px) {
 
   .top-header,
   .navbar,
@@ -199,16 +202,22 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
     flex: 1 50%;
   }
 
+/* HIGHLIGHT THE SECTION NAVIGATED TO */
   :target {
     background-color: #f6841b;
     color: white;
     box-shadow: 0 0 8px rgba(47, 29, 11, 0.4);
   }
 
+/* THERE'S A BETTER WAY I'M SURE BUT WE DON'T WANT IT WHITE AFTER TARGET */
+  .button {
+    color: black;
+  }
+
 }
 
 /* SET TITLE NEXT TO NAVBAR */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1040px) {
 
   .top-header{
     flex-direction: row;
