@@ -227,4 +227,7 @@ I FORGOT WHAT AN ALPHA CHANNEL WAS AND FOUGHT THAT FOR A BIT */
     flex: 5 1 auto;
   }
 
+  .content{
+    max-width: 1050px;
+  }
 }
